@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>SELETOR DE CORES RGB</title>
+</head>
+
+<body>
+  <div class="content">
+    <h4> Seletor de cores RGB</h4>
+    <div class="section">
+      <div class="textPred">
+        <p>(R) Vermelho:</p>
+      </div>
+      <input type="range" class="inputrange" id="rangeR" name="inputRangeR" min="0" max="255" step="1" value="0"
+        onchange="changeValueR()" />
+      <input type="text" class="input" id="valueR" name="inputTextR" value="0" readonly />
+    </div>
+    <div class="section">
+      <div class="textPgreen">
+        <p>(G) Verde:</p>
+      </div>
+      <input type="range" class="inputrange" id="rangeG" name="inputRangeR" min="0" max="255" step="1" value="0"
+        onchange="changeValueG()" />
+      <input type="text" class="input" id="valueG" name="inputTextB" value="0" readonly />
+    </div>
+    <div class="section">
+      <div class="textPblue">
+        <p>(B) Azul</p>
+      </div>
+
+      <input type="range" class="inputrange" id="rangeB" name="inputRangeB" min="0" max="255" step="1" value="0"
+        onchange="changeValueB()" />
+      <input type="text" class="input" id="valueB" name="inputTextR" value="0" readonly />
+    </div>
+    <div id="divColor"></div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
